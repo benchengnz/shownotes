@@ -1,3 +1,16 @@
+
+
+button {
+  border: 0;
+  padding: 2px;
+  margin: 2px;
+}
+
+textarea.mainText {
+  width: 100%;
+  min-height: 250px;
+}
+
 .App {
   text-align: center;
 }
