@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
+import { FaTrashAlt, FaMinusCircle, FaPlusCircle } from 'react-icons/fa';
 
 function Header(props) {
   const handleOnChange = (event) => {
@@ -26,17 +27,16 @@ function Header(props) {
       </div>
       <div className="col-1">
         <button onClick={props.increaseFontSize} variant="outline-Info">
-          ➕
-        </button>
+                  <FaPlusCircle size={24}/></button>
       </div>
       <div className="col-1">
-        <button onClick={props.descreaseFontSize} variant="outline-Info">
-          ➖
+              <button onClick={props.descreaseFontSize} variant="outline-Info">
+                  <FaMinusCircle size={24} />
         </button>
       </div>
       <div className="col-1">
         <button onClick={handleClearText} variant="outline-danger">
-          ❌
+          <FaTrashAlt size={24} />
         </button>
       </div>
     </div>

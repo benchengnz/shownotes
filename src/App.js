@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './components/header'; 
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import { FaHeart } from "react-icons/fa";
 
 function App() {
   var options = [
@@ -52,6 +53,7 @@ function App() {
               style={textStyle}
               className='mainText' onChange={handleInputChange}
               value={text}></textarea>
+            <FaHeart/>
           </div>
         </div>
       </div>
